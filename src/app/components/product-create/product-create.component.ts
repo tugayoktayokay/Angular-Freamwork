@@ -9,7 +9,7 @@ import { ProductService } from 'src/app/services/product.service';
 export class ProductCreateComponent implements OnInit {
   product = {
     name: '',
-    description: '',
+    details: '',
     available: false
   };
   submitted = false;
@@ -22,7 +22,7 @@ export class ProductCreateComponent implements OnInit {
   createProduct(): void {
     const data = {
       name: this.product.name,
-      description: this.product.description
+      details: this.product.details
     };
 
     this.productService.create(data)
@@ -40,7 +40,7 @@ export class ProductCreateComponent implements OnInit {
     this.submitted = false;
     this.product = {
       name: '',
-      description: '',
+      details: '',
       available: false
     };
   }

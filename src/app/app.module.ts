@@ -15,6 +15,7 @@ import { ComponentsModule } from './components/components.module';
 import { JwtInterceptor } from './_helpers/jwt.interceptor';
 import { ErrorInterceptor } from './_helpers/error.interceptor';
 import { fakeBackendProvider } from './_helpers';
+import { MatTableModule } from '@angular/material/table';
 
 
 @NgModule({
@@ -25,7 +26,8 @@ import { fakeBackendProvider } from './_helpers';
     ComponentsModule,
     NgbModule,
     RouterModule,
-    AppRoutingModule
+    AppRoutingModule,
+    MatTableModule,
   ],
   declarations: [
     AppComponent,
